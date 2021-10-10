@@ -1,0 +1,1 @@
+Trying to develop a model that recognises whether an image has fluffy things in it. [Go here](https://colab.research.google.com/github/mihailthebuilder/fluffy-nb/blob/main/fluffy.ipynb) to run the model.
