@@ -9,3 +9,9 @@ for file in * ; do
 done
 
 cd ../not_fluffy
+
+for file in * ; do
+    basename=$(tr -dc A-Z </dev/urandom | head -c 20)
+	newname="$basename.${file#*.}";
+	mv "$file" "$newname";
+done
