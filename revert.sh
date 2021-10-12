@@ -10,12 +10,14 @@ tar -xf fluffy-images.tar.xz -C ./img/combined
 cd img
 mkdir fluffy not_fluffy
 
-testing="hullo"
+cd combined
 
-if [[ $testing =~ [[:upper:]] ]]
-
-then
-    echo "uppercase"
-else
-    echo "lowercase"
-fi
+for file in * ; do
+    echo $file
+    if [[ $file =~ [[:upper:]] ]]
+    then
+        mv $file ../not_fluffy
+    else
+        mv $file ../fluffy
+    fi
+done
