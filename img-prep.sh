@@ -21,3 +21,8 @@ for file in * ; do
 	newname="$basename.${file#*.}";
 	mv "$file" "$newname";
 done
+
+# copy all images into a single folder, then archive them
+cd ..
+cp -r fluffy/. combined
+cp -r not_fluffy/. combined
