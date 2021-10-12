@@ -18,7 +18,10 @@ for file in * ; do
 	mv "$file" "$newname";
 done
 
-# copy all images into a single folder, then archive them
+# copy all images into a single folder
 cd ..
 cp -r fluffy/. combined
 cp -r not_fluffy/. combined
+
+# archive all images
+tar -zcf fluffy-images.tar.xz combined
