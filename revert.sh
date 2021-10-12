@@ -2,6 +2,8 @@
 
 mkdir -p img/combined
 
+tar -xf fluffy-images.tar.xz -C ./img/combined
+
 testing="hullo"
 
 if [[ $testing =~ [[:upper:]] ]]
