@@ -24,4 +24,6 @@ cp -r fluffy/. combined
 cp -r not_fluffy/. combined
 
 # archive all images
-tar -zcf fluffy-images.tar.xz combined
+archive="fluffy-images.tar.xz"
+tar -zcf $archive combined
+mv $archive ../
