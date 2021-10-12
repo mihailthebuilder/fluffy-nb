@@ -27,3 +27,6 @@ cp -r not_fluffy/. combined
 archive="fluffy-images.tar.xz"
 tar -zcf $archive combined
 mv $archive ../
+
+# remove combined folder
+rm -rf combined
