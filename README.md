@@ -1,3 +1,5 @@
+# Fluffy model
+
 A model that recognises whether there's fluffy things in an image.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mihailthebuilder/fluffy-nb/blob/main/fluffy.ipynb)
