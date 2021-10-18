@@ -4,7 +4,7 @@
 cd ./img/fluffy
 
 for file in * ; do
-    basename=$(tr -dc a-z </dev/urandom | head -c 20)
+    basename=$(tr -dc a-z </dev/urandom | head -c 20);
 	newname="$basename.${file#*.}";
 	mv "$file" "$newname";
 done
@@ -13,7 +13,7 @@ done
 cd ../not_fluffy
 
 for file in * ; do
-    basename=$(tr -dc A-Z </dev/urandom | head -c 20)
+    basename=$(tr -dc A-Z </dev/urandom | head -c 20);
 	newname="$basename.${file#*.}";
 	mv "$file" "$newname";
 done
